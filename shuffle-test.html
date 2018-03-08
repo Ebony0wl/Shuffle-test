@@ -1,0 +1,60 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>The HTML5 Herald</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+$(document).ready(function(){
+    $("#show-all").click(function(){
+		$("li.all").show();
+        $("li.all").show();
+    });
+    $("#show-art").click(function(){
+		$("li.art").hide();
+        $("li.art").show();
+        $("li.biz").hide();
+        $("li.dance").hide();
+    });
+    $("#show-biz").click(function(){
+        $("li.art").hide();
+		$("li.biz").hide();
+        $("li.biz").show();
+        $("li.dance").hide();
+    });
+    $("#show-dance").click(function(){
+        $("li.art").hide();
+        $("li.biz").hide();
+		$("li.dance").hide();
+        $("li.dance").show();
+    });
+});
+</script>
+</head>
+
+<body>
+  <ul>
+	  <li><a href="#" id="show-all">Show all</a></li>
+	  <li><a href="#" id="show-art">art</a></li>
+	  <li><a href="#" id="show-biz">business</a></li>
+	  <li><a href="#" id="show-dance">dance</a></li>	 
+</ul>
+<ul class="programs">
+  	<li class="all art">painting</li>
+  	<li class="all art">sculpture</li>
+  	<li class="all art">photography</li>
+  	<li class="all art">design</li>
+  	<li class="all biz">accunting</li>
+  	<li class="all biz">spreadsheets</li>
+  	<li class="all dance">ballet</li>
+  	<li class="all dance">modern</li>
+  	<li class="all dance">tap</li>
+</ul>
+</body>
+</html>
