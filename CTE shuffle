@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+$(document).ready(function(){
+    $("#show-all").click(function(){
+		$("li.all").show();
+        $("li.all").show();
+    });
+    $("#show-art").click(function(){
+		$("li.art").hide();
+        $("li.art").show();
+        $("li.biz").hide();
+        $("li.dance").hide();
+    });
+    $("#show-biz").click(function(){
+        $("li.art").hide();
+		$("li.biz").hide();
+        $("li.biz").show();
+        $("li.dance").hide();
+    });
+    $("#show-dance").click(function(){
+        $("li.art").hide();
+        $("li.biz").hide();
+		$("li.dance").hide();
+        $("li.dance").show();
+    });
+});
+</script>
+</head>
+
+<body>
+
+
+<ul>
+   <li><a href="#" id="show-all">All</a></li>
+   <li><a href="#" id="show-business">Business</a></li>
+   <li><a href="#" id="show-media">Communication and Media Studies</a></li>
+   <li><a href="#" id="show-csi">Computer Science and Information Systems</a>​</li>
+   <li><a href="#" id="show-OfficeTech">Office Technology</a>​</li>
+   <li><a href="#" id="show-cosmetology">Cosmetology</a>​</li>
+   <li><a href="#" id="show-DesignTech">Design Technology</a>​</li>
+   <li><a href="#" id="show-ECE">Early Childhood Education</a>​</li>
+   <li><a href="#" id="show-dance">Fashion Design and Merchandising</a>​</li>
+   <li><a href="#" id="show-dance">Health Sciences</a>​</li>
+   <li><a href="#" id="show-dance">Photography</a>​</li>
+   <li><a href="#" id="show-dance">Sustainable Technologies</a>​</li>
+   <li><a href="#" id="show-Theatre">Theatre Arts</a>​</li>
+</ul>
+<ul class="programs">
+   <li class="all biz">accounting</li>
+   <li class="all dance">ballet</li>
+   <li class="all art">design</li> 
+   <li class="all dance">modern</li>
+   <li class="all art">painting</li>
+   <li class="all art">photography</li>
+   <li class="all art">sculpture</li>
+   <li class="all biz">spreadsheets</li>
+   <li class="all dance">tap</li>
+</ul>
+</body>
+</html>
